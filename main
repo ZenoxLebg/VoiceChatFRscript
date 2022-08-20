@@ -1,584 +1,650 @@
 wait(2)
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Voicechat FR fucker by $ z#2945 & xHeptc", "Serpent")
+local Window = Library.CreateLib("zenox hub", "Serpent")
 
--- Principal
-local Main = Window:NewTab("Prinicpal")
-local SectionPrincipal = Main:NewSection("Voicechat FR")
+local Universal = Window:NewTab("Universal")
+local SectionUniversal = Universal:NewSection("Si il y à que ça le hub ne supporte pas ton jeu.")
 
-
-SectionPrincipal:NewButton("Give sword", "Te fait apparaitre une épée histoire d'enculer les gens qui t'harcèle.", function()
+SectionUniversal:NewButton("Hydroxide c.1", "Execute un scanneur de module puissant.",function()
+    local owner = "Upbolt"
+    local branch = "revision"
     
-
-local args = {
-    [1] = "steppedOn",
-    [2] = game:GetService("ReplicatedStorage").Sword
-}
-
-game:GetService("ReplicatedStorage").ToolEvent:FireServer(unpack(args))
-end)
-
-
-SectionPrincipal:NewButton("CMD-X", "Lance le script admin CMD-X lol", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
-end)
-
-SectionPrincipal:NewSlider("Walkspeed", "jsp wsh", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
-end)
-
--- Téléportation
-
-local Main = Window:NewTab("Teleportation")
-local Teleportation = Main:NewSection("Tout les endroits important de TP")
-
-
-Teleportation:NewButton("Gym", "Te tp à la gym.", function()
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-355.880127, -90.1113434, 168.307205, -0.035415832, -2.87465323e-08, 0.999372661, 3.71497366e-09, 1, 2.88962276e-08, -0.999372661, 4.73602713e-09, -0.035415832)
-end)
-
-Teleportation:NewButton("Plage", "Te tp à la plage.", function()
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-494.506714, -97.5875015, 339.263306, -0.999284744, -5.46003847e-08, -0.037815962, -5.66997578e-08, 1, 5.44429923e-08, 0.037815962, 5.65482061e-08, -0.999284744)
-end)
-
-Teleportation:NewButton("Endroit caché (Cliquez sur la description)", "Si il y à des gens vous risquez de ne pas les voir.'", function()
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-377.981964, -59.991993, 2397.10034, 0.99999398, 9.49200469e-08, 0.00347447884, -9.48646672e-08, 1, -1.61040603e-08, -0.00347447884, 1.57743578e-08, 0.99999398)
-end)
-
-Teleportation:NewButton("Haut du bâtiment", "Te tp au dessus du bâtiment.", function()
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-539.781616, 68.0518875, 192.901962, -0.997008085, 2.47882515e-08, 0.0772973225, 1.63512439e-08, 1, -1.09782981e-07, -0.0772973225, -1.08190612e-07, -0.997008085)
-end)
-
-Teleportation:NewButton("Fin du parkour", "Te tp à la fin du parkour.", function()
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-139.860931, -86.7613297, -101.571281, 0.999999523, 6.41877449e-08, -0.000981800607, -6.42017426e-08, 1, -1.42263952e-08, 0.000981800607, 1.42894221e-08, 0.999999523) 
-end)
-
-Teleportation:NewButton("Spawn", "Te tp au spawn.", function()
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2705.01709, -56.0946121, -79.3778839, -0.362213969, 5.18916892e-08, -0.932094991, 6.90799169e-08, 1, 2.8827511e-08, 0.932094991, -5.39473177e-08, -0.362213969)
-end)
-
--- Commande fun
-
-local Main = Window:NewTab("Fun")
-local Fun = Main:NewSection("Truc fun :D")
-
-Fun:NewButton("Give Dominus Empyreus", "bah rien à dire mdr", function()
-    local lp = game.Players.LocalPlayer
-    local position = lp.Character.HumanoidRootPart.CFrame
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-134.126083, -87.4612961, -105.931091, -1, 0, 0, 0, 1, 0, 0, 0, -1)
-    wait(0.1)
-    lp.Character.HumanoidRootPart.CFrame = position  
-end)
-
-
-Fun:NewButton("Give Golden crown", "bah rien à dire mdr", function()
-    local lp = game.Players.LocalPlayer
-    local position = lp.Character.HumanoidRootPart.CFrame
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-197.821442, -86.5930939, 695.127441, 0.996008933, 7.02865011e-09, -0.089253366, -8.36414227e-09, 1, -1.4588923e-08, 0.089253366, 1.52772266e-08, 0.996008933)
-    wait(0.1)
-    lp.Character.HumanoidRootPart.CFrame = position  
-end)
-
-Fun:NewButton("Give Black valk", "bah rien à dire mdr", function()
-    local lp = game.Players.LocalPlayer
-    local position = lp.Character.HumanoidRootPart.CFrame
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-220.006714, -87.2604904, 694.797913, 0.999609828, -1.24497337e-08, 0.0279312115, 1.08942455e-08, 1, 5.58421327e-08, -0.0279312115, -5.55160575e-08, 0.999609828)
-    wait(0.1)
-    lp.Character.HumanoidRootPart.CFrame = position  
-end)
-
-Fun:NewButton("Give Dominus Praefectus", "bah rien à dire mdr", function()
-    local lp = game.Players.LocalPlayer
-    local position = lp.Character.HumanoidRootPart.CFrame
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-240.552658, -88.1000443, 695.398315, 0.999493718, -1.25180835e-08, 0.0318160281, 1.32588465e-08, 1, -2.30717347e-08, -0.0318160281, 2.34818991e-08, 0.999493718)
-    wait(0.1)
-    lp.Character.HumanoidRootPart.CFrame = position  
-end)
-
-Fun:NewButton("Give Sky Blue Sparkle Time Fedora", "bah rien à dire mdr", function()
-    local lp = game.Players.LocalPlayer
-    local position = lp.Character.HumanoidRootPart.CFrame
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-259.562927, -88.1000443, 695.475037, 0.996254086, 8.02399125e-09, 0.0864743292, -8.3855447e-09, 1, 3.8178003e-09, -0.0864743292, -4.52863347e-09, 0.996254086)
-    wait(0.1)
-    lp.Character.HumanoidRootPart.CFrame = position  
-end)
-
-SectionPrincipal:NewToggle("Fly Bypass (LIRE DESCRIPTION)", "Toggle R Bypass 80% des jeux.", function(state)
-    if state then
-        local Settings = {
-	
-            Speed = 10,
-            SprintSpeed = 30,
-            ToggleKey = Enum.KeyCode.R,
-            SprintKey = Enum.KeyCode.LeftControl,
-            
-            ForwardKey = Enum.KeyCode.W,
-            LeftKey = Enum.KeyCode.A,
-            BackwardKey = Enum.KeyCode.S,
-            RightKey = Enum.KeyCode.D,
-            UpKey = Enum.KeyCode.E,
-            DownKey = Enum.KeyCode.Q,
-            
-        }
-        
-        local Screen = Instance.new("ScreenGui",game.CoreGui)
-        local Distance = Instance.new("TextLabel",Screen)
-        Distance.BackgroundTransparency = 1
-        Distance.Size = UDim2.new(0,10,0,10)
-        Distance.ZIndex = 2
-        Distance.Text = "0"
-        Distance.TextStrokeTransparency = .5
-        Distance.TextSize = 20
-        Distance.TextStrokeColor3 = Color3.fromRGB(33, 33, 33)
-        Distance.Font = Enum.Font.Gotham
-        Distance.TextColor3 = Color3.new(1,1,1)
-        Distance.TextXAlignment = Enum.TextXAlignment.Left
-        Distance.TextYAlignment = Enum.TextYAlignment.Top
-        
-        
-        local Mouse = game.Players.LocalPlayer:GetMouse()
-        local Direction = Vector3.new(0,0,0)
-        local InterpolatedDir = Direction
-        local Tilt = 0
-        local InterpolatedTilt = Tilt
-        local RunService = game:GetService("RunService")
-        local Toggled = false
-        local Sprinting = false
-        local CameraPos = game.Workspace.CurrentCamera.CFrame.Position
-        
-        pcall(function()
-            game.Players.LocalPlayer.DevCameraOcclusionMode = Enum.DevCameraOcclusionMode.Invisicam	
-        end)
-        
-        function Lerp(a, b, t)
-            return a + (b - a) * t
-        end
-        
-        local LastPos = nil
-        
-        function KeyHandler(actionName, userInputState)
-            if true and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
-                if actionName == "Toggle" and userInputState == Enum.UserInputState.Begin then
-                    Toggled = not Toggled
-                    if Toggled then
-                        LastPos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
-                        --game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
-                        game.Players.LocalPlayer.Character.Humanoid.PlatformStand = true 
-                    else
-                        LastPos = nil
-                        game.Players.LocalPlayer.Character.Humanoid.PlatformStand = false
-                        --game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
-                    end
-                elseif actionName == "Forward" then
-                    Tilt = userInputState == Enum.UserInputState.Begin and -20 or 0
-                    Direction = Vector3.new(Direction.x,Direction.y,userInputState == Enum.UserInputState.Begin and -1 or 0)
-                elseif actionName == "Left" then
-                    Direction = Vector3.new(userInputState == Enum.UserInputState.Begin and -1 or 0,Direction.y,Direction.z)
-                elseif actionName == "Backward" then
-                    Tilt = userInputState == Enum.UserInputState.Begin and 20 or 0
-                    Direction = Vector3.new(Direction.x,Direction.y,userInputState == Enum.UserInputState.Begin and 1 or 0)
-                elseif actionName == "Right" then
-                    Direction = Vector3.new(userInputState == Enum.UserInputState.Begin and 1 or 0,Direction.y,Direction.z)
-                elseif actionName == "Up" then
-                    Direction = Vector3.new(Direction.x,userInputState == Enum.UserInputState.Begin and 1 or 0,Direction.z)
-                elseif actionName == "Down" then
-                    Direction = Vector3.new(Direction.x,userInputState == Enum.UserInputState.Begin and -1 or 0,Direction.z)
-                elseif actionName == "Sprint" then
-                    Sprinting = userInputState == Enum.UserInputState.Begin
-                end
-            end
-        end
-        
-        
-        
-        game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
-            
-            if inputObject.KeyCode == Settings.ToggleKey then
-                KeyHandler("Toggle", Enum.UserInputState.Begin, inputObject)
-            elseif inputObject.KeyCode == Settings.ForwardKey then
-                KeyHandler("Forward", Enum.UserInputState.Begin, inputObject)
-            elseif inputObject.KeyCode == Settings.LeftKey then
-                KeyHandler("Left", Enum.UserInputState.Begin, inputObject)
-            elseif inputObject.KeyCode == Settings.BackwardKey then
-                KeyHandler("Backward", Enum.UserInputState.Begin, inputObject)
-            elseif inputObject.KeyCode == Settings.RightKey then
-                KeyHandler("Right", Enum.UserInputState.Begin, inputObject)
-            elseif inputObject.KeyCode == Settings.UpKey then	
-                KeyHandler("Up", Enum.UserInputState.Begin, inputObject)
-            elseif inputObject.KeyCode == Settings.DownKey then
-                KeyHandler("Down", Enum.UserInputState.Begin, inputObject)
-            elseif inputObject.KeyCode == Settings.SprintKey then
-                KeyHandler("Sprint", Enum.UserInputState.Begin, inputObject)
-            end
-            
-            
-        end)
-        
-        
-        game:GetService("UserInputService").InputEnded:connect(function(inputObject, gameProcessedEvent)
-            
-            if inputObject.KeyCode == Settings.ToggleKey then
-                KeyHandler("Toggle", Enum.UserInputState.End, inputObject)
-            elseif inputObject.KeyCode == Settings.ForwardKey then
-                KeyHandler("Forward", Enum.UserInputState.End, inputObject)
-            elseif inputObject.KeyCode == Settings.LeftKey then
-                KeyHandler("Left", Enum.UserInputState.End, inputObject)
-            elseif inputObject.KeyCode == Settings.BackwardKey then
-                KeyHandler("Backward", Enum.UserInputState.End, inputObject)
-            elseif inputObject.KeyCode == Settings.RightKey then
-                KeyHandler("Right", Enum.UserInputState.End, inputObject)
-            elseif inputObject.KeyCode == Settings.UpKey then	
-                KeyHandler("Up", Enum.UserInputState.End, inputObject)
-            elseif inputObject.KeyCode == Settings.DownKey then
-                KeyHandler("Down", Enum.UserInputState.End, inputObject)
-            elseif inputObject.KeyCode == Settings.SprintKey then
-                KeyHandler("Sprint", Enum.UserInputState.End, inputObject)
-            end
-            
-            
-        end)
-        
-        
-        RunService.RenderStepped:Connect(function()
-            if Toggled and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")  then
-                for i,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
-                    if v:IsA("BasePart") then
-                        v.Velocity = Vector3.new(0,0,0)
-                    end
-                end
-                local RootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-                if LastPos then
-                    Distance.Text = math.floor((LastPos-RootPart.Position).Magnitude+.5)
-                    if (LastPos-RootPart.Position).Magnitude >= 350 then
-                        Distance.TextColor3 = Color3.new(1,0,0)
-                    else
-                        Distance.TextColor3 = Color3.new(1,1,1)	
-                    end
-                else
-                    Distance.TextColor3 = Color3.new(1,1,1)
-                    Distance.Text = 0
-                end
-                InterpolatedDir = InterpolatedDir:Lerp((Direction * (Sprinting and Settings.SprintSpeed or Settings.Speed)),.2)
-                InterpolatedTilt = Lerp(InterpolatedTilt ,Tilt* (Sprinting and 2 or 1),Tilt == 0 and .2 or .1)
-                RootPart.CFrame = RootPart.CFrame:Lerp(CFrame.new(RootPart.Position,RootPart.Position + Mouse.UnitRay.Direction) * CFrame.Angles(0,math.rad(00),0) * CFrame.new(InterpolatedDir)  * CFrame.Angles(math.rad(InterpolatedTilt),0,0),.2)
-            else
-                Distance.TextColor3 = Color3.new(1,1,1)
-                Distance.Text = 0
-            end	
-        end)
-         
-    else
-        local Settings = {
-	
-            Speed = 10,
-            SprintSpeed = 30,
-            ToggleKey = Enum.KeyCode.R,
-            SprintKey = Enum.KeyCode.LeftControl,
-            
-            ForwardKey = Enum.KeyCode.W,
-            LeftKey = Enum.KeyCode.A,
-            BackwardKey = Enum.KeyCode.S,
-            RightKey = Enum.KeyCode.D,
-            UpKey = Enum.KeyCode.E,
-            DownKey = Enum.KeyCode.Q,
-            
-        }
-        
-        local Screen = Instance.new("ScreenGui",game.CoreGui)
-        local Distance = Instance.new("TextLabel",Screen)
-        Distance.BackgroundTransparency = 1
-        Distance.Size = UDim2.new(0,10,0,10)
-        Distance.ZIndex = 2
-        Distance.Text = "0"
-        Distance.TextStrokeTransparency = .5
-        Distance.TextSize = 20
-        Distance.TextStrokeColor3 = Color3.fromRGB(33, 33, 33)
-        Distance.Font = Enum.Font.Gotham
-        Distance.TextColor3 = Color3.new(1,1,1)
-        Distance.TextXAlignment = Enum.TextXAlignment.Left
-        Distance.TextYAlignment = Enum.TextYAlignment.Top
-        
-        
-        local Mouse = game.Players.LocalPlayer:GetMouse()
-        local Direction = Vector3.new(0,0,0)
-        local InterpolatedDir = Direction
-        local Tilt = 0
-        local InterpolatedTilt = Tilt
-        local RunService = game:GetService("RunService")
-        local Toggled = false
-        local Sprinting = false
-        local CameraPos = game.Workspace.CurrentCamera.CFrame.Position
-        
-        pcall(function()
-            game.Players.LocalPlayer.DevCameraOcclusionMode = Enum.DevCameraOcclusionMode.Invisicam	
-        end)
-        
-        function Lerp(a, b, t)
-            return a + (b - a) * t
-        end
-        
-        local LastPos = nil
-        
-        function KeyHandler(actionName, userInputState)
-            if true and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
-                if actionName == "Toggle" and userInputState == Enum.UserInputState.Begin then
-                    Toggled = not Toggled
-                    if Toggled then
-                        LastPos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
-                        --game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
-                        game.Players.LocalPlayer.Character.Humanoid.PlatformStand = true 
-                    else
-                        LastPos = nil
-                        game.Players.LocalPlayer.Character.Humanoid.PlatformStand = false
-                        --game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
-                    end
-                elseif actionName == "Forward" then
-                    Tilt = userInputState == Enum.UserInputState.Begin and -20 or 0
-                    Direction = Vector3.new(Direction.x,Direction.y,userInputState == Enum.UserInputState.Begin and -1 or 0)
-                elseif actionName == "Left" then
-                    Direction = Vector3.new(userInputState == Enum.UserInputState.Begin and -1 or 0,Direction.y,Direction.z)
-                elseif actionName == "Backward" then
-                    Tilt = userInputState == Enum.UserInputState.Begin and 20 or 0
-                    Direction = Vector3.new(Direction.x,Direction.y,userInputState == Enum.UserInputState.Begin and 1 or 0)
-                elseif actionName == "Right" then
-                    Direction = Vector3.new(userInputState == Enum.UserInputState.Begin and 1 or 0,Direction.y,Direction.z)
-                elseif actionName == "Up" then
-                    Direction = Vector3.new(Direction.x,userInputState == Enum.UserInputState.Begin and 1 or 0,Direction.z)
-                elseif actionName == "Down" then
-                    Direction = Vector3.new(Direction.x,userInputState == Enum.UserInputState.Begin and -1 or 0,Direction.z)
-                elseif actionName == "Sprint" then
-                    Sprinting = userInputState == Enum.UserInputState.Begin
-                end
-            end
-        end
-        
-        
-        
-        game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
-            
-            if inputObject.KeyCode == Settings.ToggleKey then
-                KeyHandler("Toggle", Enum.UserInputState.Begin, inputObject)
-            elseif inputObject.KeyCode == Settings.ForwardKey then
-                KeyHandler("Forward", Enum.UserInputState.Begin, inputObject)
-            elseif inputObject.KeyCode == Settings.LeftKey then
-                KeyHandler("Left", Enum.UserInputState.Begin, inputObject)
-            elseif inputObject.KeyCode == Settings.BackwardKey then
-                KeyHandler("Backward", Enum.UserInputState.Begin, inputObject)
-            elseif inputObject.KeyCode == Settings.RightKey then
-                KeyHandler("Right", Enum.UserInputState.Begin, inputObject)
-            elseif inputObject.KeyCode == Settings.UpKey then	
-                KeyHandler("Up", Enum.UserInputState.Begin, inputObject)
-            elseif inputObject.KeyCode == Settings.DownKey then
-                KeyHandler("Down", Enum.UserInputState.Begin, inputObject)
-            elseif inputObject.KeyCode == Settings.SprintKey then
-                KeyHandler("Sprint", Enum.UserInputState.Begin, inputObject)
-            end
-            
-            
-        end)
-        
-        
-        game:GetService("UserInputService").InputEnded:connect(function(inputObject, gameProcessedEvent)
-            
-            if inputObject.KeyCode == Settings.ToggleKey then
-                KeyHandler("Toggle", Enum.UserInputState.End, inputObject)
-            elseif inputObject.KeyCode == Settings.ForwardKey then
-                KeyHandler("Forward", Enum.UserInputState.End, inputObject)
-            elseif inputObject.KeyCode == Settings.LeftKey then
-                KeyHandler("Left", Enum.UserInputState.End, inputObject)
-            elseif inputObject.KeyCode == Settings.BackwardKey then
-                KeyHandler("Backward", Enum.UserInputState.End, inputObject)
-            elseif inputObject.KeyCode == Settings.RightKey then
-                KeyHandler("Right", Enum.UserInputState.End, inputObject)
-            elseif inputObject.KeyCode == Settings.UpKey then	
-                KeyHandler("Up", Enum.UserInputState.End, inputObject)
-            elseif inputObject.KeyCode == Settings.DownKey then
-                KeyHandler("Down", Enum.UserInputState.End, inputObject)
-            elseif inputObject.KeyCode == Settings.SprintKey then
-                KeyHandler("Sprint", Enum.UserInputState.End, inputObject)
-            end
-            
-            
-        end)
-        
-        
-        RunService.RenderStepped:Connect(function()
-            if Toggled and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")  then
-                for i,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
-                    if v:IsA("BasePart") then
-                        v.Velocity = Vector3.new(0,0,0)
-                    end
-                end
-                local RootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-                if LastPos then
-                    Distance.Text = math.floor((LastPos-RootPart.Position).Magnitude+.5)
-                    if (LastPos-RootPart.Position).Magnitude >= 350 then
-                        Distance.TextColor3 = Color3.new(1,0,0)
-                    else
-                        Distance.TextColor3 = Color3.new(1,1,1)	
-                    end
-                else
-                    Distance.TextColor3 = Color3.new(1,1,1)
-                    Distance.Text = 0
-                end
-                InterpolatedDir = InterpolatedDir:Lerp((Direction * (Sprinting and Settings.SprintSpeed or Settings.Speed)),.2)
-                InterpolatedTilt = Lerp(InterpolatedTilt ,Tilt* (Sprinting and 2 or 1),Tilt == 0 and .2 or .1)
-                RootPart.CFrame = RootPart.CFrame:Lerp(CFrame.new(RootPart.Position,RootPart.Position + Mouse.UnitRay.Direction) * CFrame.Angles(0,math.rad(00),0) * CFrame.new(InterpolatedDir)  * CFrame.Angles(math.rad(InterpolatedTilt),0,0),.2)
-            else
-                Distance.TextColor3 = Color3.new(1,1,1)
-                Distance.Text = 0
-            end	
-        end)
-         
+    local function webImport(file)
+        return loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/%s/Hydroxide/%s/%s.lua"):format(owner, branch, file)), file .. '.lua')()
     end
 end)
-   
+        
 
-    SectionPrincipal:NewButton("Invisible (Toggle E)", "Très instable car je les reécris.", function()
- 
-local ScriptStarted = false
-local Keybind = "E" 
-local Transparency = true 
-local NoClip = false 
+SectionUniversal:NewButton("CMDX","Execute CMDX (contenant remotespy).",function()
+    -- La grande soeur de zaku est trop belle :D
 
-local Player = game:GetService("Players").LocalPlayer
-local RealCharacter = Player.Character or Player.CharacterAdded:Wait()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
 
-local IsInvisible = false
-
-RealCharacter.Archivable = true
-local FakeCharacter = RealCharacter:Clone()
-local Part
-Part = Instance.new("Part", workspace)
-Part.Anchored = true
-Part.Size = Vector3.new(200, 1, 200)
-Part.CFrame = CFrame.new(0, -500, 0) --Set this to whatever you want, just far away from the map.
-Part.CanCollide = true
-FakeCharacter.Parent = workspace
-FakeCharacter.HumanoidRootPart.CFrame = Part.CFrame * CFrame.new(0, 5, 0)
-
-for i, v in pairs(RealCharacter:GetChildren()) do
-  if v:IsA("LocalScript") then
-      local clone = v:Clone()
-      clone.Disabled = true
-      clone.Parent = FakeCharacter
-  end
-end
-if Transparency then
-  for i, v in pairs(FakeCharacter:GetDescendants()) do
-      if v:IsA("BasePart") then
-          v.Transparency = 0.7
-      end
-  end
-end
-local CanInvis = true
-function RealCharacterDied()
-  CanInvis = false
-  RealCharacter:Destroy()
-  RealCharacter = Player.Character
-  CanInvis = true
-  isinvisible = false
-  FakeCharacter:Destroy()
-  workspace.CurrentCamera.CameraSubject = RealCharacter.Humanoid
-
-  RealCharacter.Archivable = true
-  FakeCharacter = RealCharacter:Clone()
-  Part:Destroy()
-  Part = Instance.new("Part", workspace)
-  Part.Anchored = true
-  Part.Size = Vector3.new(200, 1, 200)
-  Part.CFrame = CFrame.new(9999, 9999, 9999) --Set this to whatever you want, just far away from the map.
-  Part.CanCollide = true
-  FakeCharacter.Parent = workspace
-  FakeCharacter.HumanoidRootPart.CFrame = Part.CFrame * CFrame.new(0, 5, 0)
-
-  for i, v in pairs(RealCharacter:GetChildren()) do
-      if v:IsA("LocalScript") then
-          local clone = v:Clone()
-          clone.Disabled = true
-          clone.Parent = FakeCharacter
-      end
-  end
-  if Transparency then
-      for i, v in pairs(FakeCharacter:GetDescendants()) do
-          if v:IsA("BasePart") then
-              v.Transparency = 0.7
-          end
-      end
-  end
- RealCharacter.Humanoid.Died:Connect(function()
- RealCharacter:Destroy()
- FakeCharacter:Destroy()
- end)
- Player.CharacterAppearanceLoaded:Connect(RealCharacterDied)
-end
-RealCharacter.Humanoid.Died:Connect(function()
- RealCharacter:Destroy()
- FakeCharacter:Destroy()
- end)
-Player.CharacterAppearanceLoaded:Connect(RealCharacterDied)
-local PseudoAnchor
-game:GetService "RunService".RenderStepped:Connect(
-  function()
-      if PseudoAnchor ~= nil then
-          PseudoAnchor.CFrame = Part.CFrame * CFrame.new(0, 5, 0)
-      end
-       if NoClip then
-      FakeCharacter.Humanoid:ChangeState(11)
-       end
-  end
-)
-
-PseudoAnchor = FakeCharacter.HumanoidRootPart
-local function Invisible()
-  if IsInvisible == false then
-      local StoredCF = RealCharacter.HumanoidRootPart.CFrame
-      RealCharacter.HumanoidRootPart.CFrame = FakeCharacter.HumanoidRootPart.CFrame
-      FakeCharacter.HumanoidRootPart.CFrame = StoredCF
-      RealCharacter.Humanoid:UnequipTools()
-      Player.Character = FakeCharacter
-      workspace.CurrentCamera.CameraSubject = FakeCharacter.Humanoid
-      PseudoAnchor = RealCharacter.HumanoidRootPart
-      for i, v in pairs(FakeCharacter:GetChildren()) do
-          if v:IsA("LocalScript") then
-              v.Disabled = false
-          end
-      end
-
-      IsInvisible = true
-  else
-      local StoredCF = FakeCharacter.HumanoidRootPart.CFrame
-      FakeCharacter.HumanoidRootPart.CFrame = RealCharacter.HumanoidRootPart.CFrame
-     
-      RealCharacter.HumanoidRootPart.CFrame = StoredCF
-     
-      FakeCharacter.Humanoid:UnequipTools()
-      Player.Character = RealCharacter
-      workspace.CurrentCamera.CameraSubject = RealCharacter.Humanoid
-      PseudoAnchor = FakeCharacter.HumanoidRootPart
-      for i, v in pairs(FakeCharacter:GetChildren()) do
-          if v:IsA("LocalScript") then
-              v.Disabled = true
-          end
-      end
-      IsInvisible = false
-  end
-end
-
-game:GetService("UserInputService").InputBegan:Connect(
-  function(key, gamep)
-      if gamep then
-          return
-      end
-      if key.KeyCode.Name:lower() == Keybind:lower() and CanInvis and RealCharacter and FakeCharacter then
-          if RealCharacter:FindFirstChild("HumanoidRootPart") and FakeCharacter:FindFirstChild("HumanoidRootPart") then
-              Invisible()
-          end
-      end
-  end
-)
-local Sound = Instance.new("Sound",game:GetService("SoundService"))
-Sound.SoundId = "rbxassetid://232127604"
-Sound:Play()
-game:GetService("StarterGui"):SetCore("SendNotification",{["Title"] = "reécris par $ z#2945.",["Text"] = "Appuie sur "..Keybind.." Pour devenir invisible.",["Duration"] = 20,["Button1"] = "oui oui tg salope"})
 end)
+if game.PlaceId == 7959057987 then
+    -- VOICECHAT FR
+    -- Principal
+    local Main = Window:NewTab("Prinicpal")
+    local SectionPrincipal = Main:NewSection("Voicechat FR")
+
+
+    SectionPrincipal:NewButton("Give sword (PATCH)", "Te fait apparaitre une épée histoire d'enculer les gens qui t'harcèle.", function()
+        
+
+    local args = {
+        [1] = "steppedOn",
+        [2] = game:GetService("ReplicatedStorage").Sword
+    }
+
+    game:GetService("ReplicatedStorage").ToolEvent:FireServer(unpack(args))
+    end)
+
+
+    SectionPrincipal:NewButton("CMD-X", "Lance le script admin CMD-X lol", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
+    end)
+
+    SectionPrincipal:NewSlider("Walkspeed", "jsp wsh", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+    end)
+
+    -- Téléportation
+
+    local Main = Window:NewTab("Teleportation")
+    local Teleportation = Main:NewSection("Tout les endroits important de TP")
+
+
+    Teleportation:NewButton("Gym", "Te tp à la gym.", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-355.880127, -90.1113434, 168.307205, -0.035415832, -2.87465323e-08, 0.999372661, 3.71497366e-09, 1, 2.88962276e-08, -0.999372661, 4.73602713e-09, -0.035415832)
+    end)
+
+    Teleportation:NewButton("Plage", "Te tp à la plage.", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-494.506714, -97.5875015, 339.263306, -0.999284744, -5.46003847e-08, -0.037815962, -5.66997578e-08, 1, 5.44429923e-08, 0.037815962, 5.65482061e-08, -0.999284744)
+    end)
+
+    Teleportation:NewButton("Endroit caché (Cliquez sur la description)", "Si il y à des gens vous risquez de ne pas les voir.'", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-377.981964, -59.991993, 2397.10034, 0.99999398, 9.49200469e-08, 0.00347447884, -9.48646672e-08, 1, -1.61040603e-08, -0.00347447884, 1.57743578e-08, 0.99999398)
+    end)
+
+    Teleportation:NewButton("Haut du bâtiment", "Te tp au dessus du bâtiment.", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-539.781616, 68.0518875, 192.901962, -0.997008085, 2.47882515e-08, 0.0772973225, 1.63512439e-08, 1, -1.09782981e-07, -0.0772973225, -1.08190612e-07, -0.997008085)
+    end)
+
+    Teleportation:NewButton("Fond vert", "Te tp au fond vert.", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-440.163025, -89.253418, 144.210129, 0.999999166, -5.27361621e-09, -0.00127502833, 5.28820099e-09, 1, 1.14354028e-08, 0.00127502833, -1.14421361e-08, 0.999999166)
+    end)
+
+    Teleportation:NewButton("Spawn", "Te tp au spawn.", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2705.01709, -56.0946121, -79.3778839, -0.362213969, 5.18916892e-08, -0.932094991, 6.90799169e-08, 1, 2.8827511e-08, 0.932094991, -5.39473177e-08, -0.362213969)
+    end)
+
+    -- Commande fun
+
+    local Main = Window:NewTab("Fun")
+    local Fun = Main:NewSection("Truc fun :D")
+
+
+    Fun:NewButton("Give Golden crown", "bah rien à dire mdr", function()
+        local lp = game.Players.LocalPlayer
+        local position = lp.Character.HumanoidRootPart.CFrame
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-197.821442, -86.5930939, 695.127441, 0.996008933, 7.02865011e-09, -0.089253366, -8.36414227e-09, 1, -1.4588923e-08, 0.089253366, 1.52772266e-08, 0.996008933)
+        wait(0.1)
+        lp.Character.HumanoidRootPart.CFrame = position  
+    end)
+
+    Fun:NewButton("Give Black valk", "bah rien à dire mdr", function()
+        local lp = game.Players.LocalPlayer
+        local position = lp.Character.HumanoidRootPart.CFrame
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-220.006714, -87.2604904, 694.797913, 0.999609828, -1.24497337e-08, 0.0279312115, 1.08942455e-08, 1, 5.58421327e-08, -0.0279312115, -5.55160575e-08, 0.999609828)
+        wait(0.1)
+        lp.Character.HumanoidRootPart.CFrame = position  
+    end)
+
+    Fun:NewButton("Give Dominus Praefectus", "bah rien à dire mdr", function()
+        local lp = game.Players.LocalPlayer
+        local position = lp.Character.HumanoidRootPart.CFrame
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-240.552658, -88.1000443, 695.398315, 0.999493718, -1.25180835e-08, 0.0318160281, 1.32588465e-08, 1, -2.30717347e-08, -0.0318160281, 2.34818991e-08, 0.999493718)
+        wait(0.1)
+        lp.Character.HumanoidRootPart.CFrame = position  
+    end)
+
+    Fun:NewButton("Give Sky Blue Sparkle Time Fedora", "bah rien à dire mdr", function()
+        local lp = game.Players.LocalPlayer
+        local position = lp.Character.HumanoidRootPart.CFrame
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-259.562927, -88.1000443, 695.475037, 0.996254086, 8.02399125e-09, 0.0864743292, -8.3855447e-09, 1, 3.8178003e-09, -0.0864743292, -4.52863347e-09, 0.996254086)
+        wait(0.1)
+        lp.Character.HumanoidRootPart.CFrame = position  
+    end)
+
+    SectionPrincipal:NewToggle("Fly Bypass (LIRE DESCRIPTION)", "Toggle R Bypass 80% des jeux.", function(state)
+        if state then
+            local Settings = {
+        
+                Speed = 10,
+                SprintSpeed = 30,
+                ToggleKey = Enum.KeyCode.R,
+                SprintKey = Enum.KeyCode.LeftControl,
+                
+                ForwardKey = Enum.KeyCode.W,
+                LeftKey = Enum.KeyCode.A,
+                BackwardKey = Enum.KeyCode.S,
+                RightKey = Enum.KeyCode.D,
+                UpKey = Enum.KeyCode.E,
+                DownKey = Enum.KeyCode.Q,
+                
+            }
+            
+            local Screen = Instance.new("ScreenGui",game.CoreGui)
+            local Distance = Instance.new("TextLabel",Screen)
+            Distance.BackgroundTransparency = 1
+            Distance.Size = UDim2.new(0,10,0,10)
+            Distance.ZIndex = 2
+            Distance.Text = "0"
+            Distance.TextStrokeTransparency = .5
+            Distance.TextSize = 20
+            Distance.TextStrokeColor3 = Color3.fromRGB(33, 33, 33)
+            Distance.Font = Enum.Font.Gotham
+            Distance.TextColor3 = Color3.new(1,1,1)
+            Distance.TextXAlignment = Enum.TextXAlignment.Left
+            Distance.TextYAlignment = Enum.TextYAlignment.Top
+            
+            
+            local Mouse = game.Players.LocalPlayer:GetMouse()
+            local Direction = Vector3.new(0,0,0)
+            local InterpolatedDir = Direction
+            local Tilt = 0
+            local InterpolatedTilt = Tilt
+            local RunService = game:GetService("RunService")
+            local Toggled = false
+            local Sprinting = false
+            local CameraPos = game.Workspace.CurrentCamera.CFrame.Position
+            
+            pcall(function()
+                game.Players.LocalPlayer.DevCameraOcclusionMode = Enum.DevCameraOcclusionMode.Invisicam	
+            end)
+            
+            function Lerp(a, b, t)
+                return a + (b - a) * t
+            end
+            
+            local LastPos = nil
+            
+            function KeyHandler(actionName, userInputState)
+                if true and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
+                    if actionName == "Toggle" and userInputState == Enum.UserInputState.Begin then
+                        Toggled = not Toggled
+                        if Toggled then
+                            LastPos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+                            --game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+                            game.Players.LocalPlayer.Character.Humanoid.PlatformStand = true 
+                        else
+                            LastPos = nil
+                            game.Players.LocalPlayer.Character.Humanoid.PlatformStand = false
+                            --game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+                        end
+                    elseif actionName == "Forward" then
+                        Tilt = userInputState == Enum.UserInputState.Begin and -20 or 0
+                        Direction = Vector3.new(Direction.x,Direction.y,userInputState == Enum.UserInputState.Begin and -1 or 0)
+                    elseif actionName == "Left" then
+                        Direction = Vector3.new(userInputState == Enum.UserInputState.Begin and -1 or 0,Direction.y,Direction.z)
+                    elseif actionName == "Backward" then
+                        Tilt = userInputState == Enum.UserInputState.Begin and 20 or 0
+                        Direction = Vector3.new(Direction.x,Direction.y,userInputState == Enum.UserInputState.Begin and 1 or 0)
+                    elseif actionName == "Right" then
+                        Direction = Vector3.new(userInputState == Enum.UserInputState.Begin and 1 or 0,Direction.y,Direction.z)
+                    elseif actionName == "Up" then
+                        Direction = Vector3.new(Direction.x,userInputState == Enum.UserInputState.Begin and 1 or 0,Direction.z)
+                    elseif actionName == "Down" then
+                        Direction = Vector3.new(Direction.x,userInputState == Enum.UserInputState.Begin and -1 or 0,Direction.z)
+                    elseif actionName == "Sprint" then
+                        Sprinting = userInputState == Enum.UserInputState.Begin
+                    end
+                end
+            end
+            
+            
+            
+            game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+                
+                if inputObject.KeyCode == Settings.ToggleKey then
+                    KeyHandler("Toggle", Enum.UserInputState.Begin, inputObject)
+                elseif inputObject.KeyCode == Settings.ForwardKey then
+                    KeyHandler("Forward", Enum.UserInputState.Begin, inputObject)
+                elseif inputObject.KeyCode == Settings.LeftKey then
+                    KeyHandler("Left", Enum.UserInputState.Begin, inputObject)
+                elseif inputObject.KeyCode == Settings.BackwardKey then
+                    KeyHandler("Backward", Enum.UserInputState.Begin, inputObject)
+                elseif inputObject.KeyCode == Settings.RightKey then
+                    KeyHandler("Right", Enum.UserInputState.Begin, inputObject)
+                elseif inputObject.KeyCode == Settings.UpKey then	
+                    KeyHandler("Up", Enum.UserInputState.Begin, inputObject)
+                elseif inputObject.KeyCode == Settings.DownKey then
+                    KeyHandler("Down", Enum.UserInputState.Begin, inputObject)
+                elseif inputObject.KeyCode == Settings.SprintKey then
+                    KeyHandler("Sprint", Enum.UserInputState.Begin, inputObject)
+                end
+                
+                
+            end)
+            
+            
+            game:GetService("UserInputService").InputEnded:connect(function(inputObject, gameProcessedEvent)
+                
+                if inputObject.KeyCode == Settings.ToggleKey then
+                    KeyHandler("Toggle", Enum.UserInputState.End, inputObject)
+                elseif inputObject.KeyCode == Settings.ForwardKey then
+                    KeyHandler("Forward", Enum.UserInputState.End, inputObject)
+                elseif inputObject.KeyCode == Settings.LeftKey then
+                    KeyHandler("Left", Enum.UserInputState.End, inputObject)
+                elseif inputObject.KeyCode == Settings.BackwardKey then
+                    KeyHandler("Backward", Enum.UserInputState.End, inputObject)
+                elseif inputObject.KeyCode == Settings.RightKey then
+                    KeyHandler("Right", Enum.UserInputState.End, inputObject)
+                elseif inputObject.KeyCode == Settings.UpKey then	
+                    KeyHandler("Up", Enum.UserInputState.End, inputObject)
+                elseif inputObject.KeyCode == Settings.DownKey then
+                    KeyHandler("Down", Enum.UserInputState.End, inputObject)
+                elseif inputObject.KeyCode == Settings.SprintKey then
+                    KeyHandler("Sprint", Enum.UserInputState.End, inputObject)
+                end
+                
+                
+            end)
+            
+            
+            RunService.RenderStepped:Connect(function()
+                if Toggled and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")  then
+                    for i,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+                        if v:IsA("BasePart") then
+                            v.Velocity = Vector3.new(0,0,0)
+                        end
+                    end
+                    local RootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+                    if LastPos then
+                        Distance.Text = math.floor((LastPos-RootPart.Position).Magnitude+.5)
+                        if (LastPos-RootPart.Position).Magnitude >= 350 then
+                            Distance.TextColor3 = Color3.new(1,0,0)
+                        else
+                            Distance.TextColor3 = Color3.new(1,1,1)	
+                        end
+                    else
+                        Distance.TextColor3 = Color3.new(1,1,1)
+                        Distance.Text = 0
+                    end
+                    InterpolatedDir = InterpolatedDir:Lerp((Direction * (Sprinting and Settings.SprintSpeed or Settings.Speed)),.2)
+                    InterpolatedTilt = Lerp(InterpolatedTilt ,Tilt* (Sprinting and 2 or 1),Tilt == 0 and .2 or .1)
+                    RootPart.CFrame = RootPart.CFrame:Lerp(CFrame.new(RootPart.Position,RootPart.Position + Mouse.UnitRay.Direction) * CFrame.Angles(0,math.rad(00),0) * CFrame.new(InterpolatedDir)  * CFrame.Angles(math.rad(InterpolatedTilt),0,0),.2)
+                else
+                    Distance.TextColor3 = Color3.new(1,1,1)
+                    Distance.Text = 0
+                end	
+            end)
+            
+        else
+            local Settings = {
+        
+                Speed = 10,
+                SprintSpeed = 30,
+                ToggleKey = Enum.KeyCode.R,
+                SprintKey = Enum.KeyCode.LeftControl,
+                
+                ForwardKey = Enum.KeyCode.W,
+                LeftKey = Enum.KeyCode.A,
+                BackwardKey = Enum.KeyCode.S,
+                RightKey = Enum.KeyCode.D,
+                UpKey = Enum.KeyCode.E,
+                DownKey = Enum.KeyCode.Q,
+                
+            }
+            
+            local Screen = Instance.new("ScreenGui",game.CoreGui)
+            local Distance = Instance.new("TextLabel",Screen)
+            Distance.BackgroundTransparency = 1
+            Distance.Size = UDim2.new(0,10,0,10)
+            Distance.ZIndex = 2
+            Distance.Text = "0"
+            Distance.TextStrokeTransparency = .5
+            Distance.TextSize = 20
+            Distance.TextStrokeColor3 = Color3.fromRGB(33, 33, 33)
+            Distance.Font = Enum.Font.Gotham
+            Distance.TextColor3 = Color3.new(1,1,1)
+            Distance.TextXAlignment = Enum.TextXAlignment.Left
+            Distance.TextYAlignment = Enum.TextYAlignment.Top
+            
+            
+            local Mouse = game.Players.LocalPlayer:GetMouse()
+            local Direction = Vector3.new(0,0,0)
+            local InterpolatedDir = Direction
+            local Tilt = 0
+            local InterpolatedTilt = Tilt
+            local RunService = game:GetService("RunService")
+            local Toggled = false
+            local Sprinting = false
+            local CameraPos = game.Workspace.CurrentCamera.CFrame.Position
+            
+            pcall(function()
+                game.Players.LocalPlayer.DevCameraOcclusionMode = Enum.DevCameraOcclusionMode.Invisicam	
+            end)
+            
+            function Lerp(a, b, t)
+                return a + (b - a) * t
+            end
+            
+            local LastPos = nil
+            
+            function KeyHandler(actionName, userInputState)
+                if true and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
+                    if actionName == "Toggle" and userInputState == Enum.UserInputState.Begin then
+                        Toggled = not Toggled
+                        if Toggled then
+                            LastPos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+                            --game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+                            game.Players.LocalPlayer.Character.Humanoid.PlatformStand = true 
+                        else
+                            LastPos = nil
+                            game.Players.LocalPlayer.Character.Humanoid.PlatformStand = false
+                            --game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+                        end
+                    elseif actionName == "Forward" then
+                        Tilt = userInputState == Enum.UserInputState.Begin and -20 or 0
+                        Direction = Vector3.new(Direction.x,Direction.y,userInputState == Enum.UserInputState.Begin and -1 or 0)
+                    elseif actionName == "Left" then
+                        Direction = Vector3.new(userInputState == Enum.UserInputState.Begin and -1 or 0,Direction.y,Direction.z)
+                    elseif actionName == "Backward" then
+                        Tilt = userInputState == Enum.UserInputState.Begin and 20 or 0
+                        Direction = Vector3.new(Direction.x,Direction.y,userInputState == Enum.UserInputState.Begin and 1 or 0)
+                    elseif actionName == "Right" then
+                        Direction = Vector3.new(userInputState == Enum.UserInputState.Begin and 1 or 0,Direction.y,Direction.z)
+                    elseif actionName == "Up" then
+                        Direction = Vector3.new(Direction.x,userInputState == Enum.UserInputState.Begin and 1 or 0,Direction.z)
+                    elseif actionName == "Down" then
+                        Direction = Vector3.new(Direction.x,userInputState == Enum.UserInputState.Begin and -1 or 0,Direction.z)
+                    elseif actionName == "Sprint" then
+                        Sprinting = userInputState == Enum.UserInputState.Begin
+                    end
+                end
+            end
+            
+            
+            
+            game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+                
+                if inputObject.KeyCode == Settings.ToggleKey then
+                    KeyHandler("Toggle", Enum.UserInputState.Begin, inputObject)
+                elseif inputObject.KeyCode == Settings.ForwardKey then
+                    KeyHandler("Forward", Enum.UserInputState.Begin, inputObject)
+                elseif inputObject.KeyCode == Settings.LeftKey then
+                    KeyHandler("Left", Enum.UserInputState.Begin, inputObject)
+                elseif inputObject.KeyCode == Settings.BackwardKey then
+                    KeyHandler("Backward", Enum.UserInputState.Begin, inputObject)
+                elseif inputObject.KeyCode == Settings.RightKey then
+                    KeyHandler("Right", Enum.UserInputState.Begin, inputObject)
+                elseif inputObject.KeyCode == Settings.UpKey then	
+                    KeyHandler("Up", Enum.UserInputState.Begin, inputObject)
+                elseif inputObject.KeyCode == Settings.DownKey then
+                    KeyHandler("Down", Enum.UserInputState.Begin, inputObject)
+                elseif inputObject.KeyCode == Settings.SprintKey then
+                    KeyHandler("Sprint", Enum.UserInputState.Begin, inputObject)
+                end
+                
+                
+            end)
+            
+            
+            game:GetService("UserInputService").InputEnded:connect(function(inputObject, gameProcessedEvent)
+                
+                if inputObject.KeyCode == Settings.ToggleKey then
+                    KeyHandler("Toggle", Enum.UserInputState.End, inputObject)
+                elseif inputObject.KeyCode == Settings.ForwardKey then
+                    KeyHandler("Forward", Enum.UserInputState.End, inputObject)
+                elseif inputObject.KeyCode == Settings.LeftKey then
+                    KeyHandler("Left", Enum.UserInputState.End, inputObject)
+                elseif inputObject.KeyCode == Settings.BackwardKey then
+                    KeyHandler("Backward", Enum.UserInputState.End, inputObject)
+                elseif inputObject.KeyCode == Settings.RightKey then
+                    KeyHandler("Right", Enum.UserInputState.End, inputObject)
+                elseif inputObject.KeyCode == Settings.UpKey then	
+                    KeyHandler("Up", Enum.UserInputState.End, inputObject)
+                elseif inputObject.KeyCode == Settings.DownKey then
+                    KeyHandler("Down", Enum.UserInputState.End, inputObject)
+                elseif inputObject.KeyCode == Settings.SprintKey then
+                    KeyHandler("Sprint", Enum.UserInputState.End, inputObject)
+                end
+                
+                
+            end)
+            
+            
+            RunService.RenderStepped:Connect(function()
+                if Toggled and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")  then
+                    for i,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+                        if v:IsA("BasePart") then
+                            v.Velocity = Vector3.new(0,0,0)
+                        end
+                    end
+                    local RootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+                    if LastPos then
+                        Distance.Text = math.floor((LastPos-RootPart.Position).Magnitude+.5)
+                        if (LastPos-RootPart.Position).Magnitude >= 350 then
+                            Distance.TextColor3 = Color3.new(1,0,0)
+                        else
+                            Distance.TextColor3 = Color3.new(1,1,1)	
+                        end
+                    else
+                        Distance.TextColor3 = Color3.new(1,1,1)
+                        Distance.Text = 0
+                    end
+                    InterpolatedDir = InterpolatedDir:Lerp((Direction * (Sprinting and Settings.SprintSpeed or Settings.Speed)),.2)
+                    InterpolatedTilt = Lerp(InterpolatedTilt ,Tilt* (Sprinting and 2 or 1),Tilt == 0 and .2 or .1)
+                    RootPart.CFrame = RootPart.CFrame:Lerp(CFrame.new(RootPart.Position,RootPart.Position + Mouse.UnitRay.Direction) * CFrame.Angles(0,math.rad(00),0) * CFrame.new(InterpolatedDir)  * CFrame.Angles(math.rad(InterpolatedTilt),0,0),.2)
+                else
+                    Distance.TextColor3 = Color3.new(1,1,1)
+                    Distance.Text = 0
+                end	
+            end)
+            
+        end
+    end)
+    
+
+        SectionPrincipal:NewButton("Invisible (Toggle E)", "Très instable car je les reécris.", function()
+    
+    local ScriptStarted = false
+    local Keybind = "E" 
+    local Transparency = true 
+    local NoClip = false 
+
+    local Player = game:GetService("Players").LocalPlayer
+    local RealCharacter = Player.Character or Player.CharacterAdded:Wait()
+
+    local IsInvisible = false
+
+    RealCharacter.Archivable = true
+    local FakeCharacter = RealCharacter:Clone()
+    local Part
+    Part = Instance.new("Part", workspace)
+    Part.Anchored = true
+    Part.Size = Vector3.new(200, 1, 200)
+    Part.CFrame = CFrame.new(0, -500, 0) --Set this to whatever you want, just far away from the map.
+    Part.CanCollide = true
+    FakeCharacter.Parent = workspace
+    FakeCharacter.HumanoidRootPart.CFrame = Part.CFrame * CFrame.new(0, 5, 0)
+
+    for i, v in pairs(RealCharacter:GetChildren()) do
+    if v:IsA("LocalScript") then
+        local clone = v:Clone()
+        clone.Disabled = true
+        clone.Parent = FakeCharacter
+    end
+    end
+    if Transparency then
+    for i, v in pairs(FakeCharacter:GetDescendants()) do
+        if v:IsA("BasePart") then
+            v.Transparency = 0.7
+        end
+    end
+    end
+    local CanInvis = true
+    function RealCharacterDied()
+    CanInvis = false
+    RealCharacter:Destroy()
+    RealCharacter = Player.Character
+    CanInvis = true
+    isinvisible = false
+    FakeCharacter:Destroy()
+    workspace.CurrentCamera.CameraSubject = RealCharacter.Humanoid
+
+    RealCharacter.Archivable = true
+    FakeCharacter = RealCharacter:Clone()
+    Part:Destroy()
+    Part = Instance.new("Part", workspace)
+    Part.Anchored = true
+    Part.Size = Vector3.new(200, 1, 200)
+    Part.CFrame = CFrame.new(9999, 9999, 9999) --Set this to whatever you want, just far away from the map.
+    Part.CanCollide = true
+    FakeCharacter.Parent = workspace
+    FakeCharacter.HumanoidRootPart.CFrame = Part.CFrame * CFrame.new(0, 5, 0)
+
+    for i, v in pairs(RealCharacter:GetChildren()) do
+        if v:IsA("LocalScript") then
+            local clone = v:Clone()
+            clone.Disabled = true
+            clone.Parent = FakeCharacter
+        end
+    end
+    if Transparency then
+        for i, v in pairs(FakeCharacter:GetDescendants()) do
+            if v:IsA("BasePart") then
+                v.Transparency = 0.7
+            end
+        end
+    end
+    RealCharacter.Humanoid.Died:Connect(function()
+    RealCharacter:Destroy()
+    FakeCharacter:Destroy()
+    end)
+    Player.CharacterAppearanceLoaded:Connect(RealCharacterDied)
+    end
+    RealCharacter.Humanoid.Died:Connect(function()
+    RealCharacter:Destroy()
+    FakeCharacter:Destroy()
+    end)
+    Player.CharacterAppearanceLoaded:Connect(RealCharacterDied)
+    local PseudoAnchor
+    game:GetService "RunService".RenderStepped:Connect(
+    function()
+        if PseudoAnchor ~= nil then
+            PseudoAnchor.CFrame = Part.CFrame * CFrame.new(0, 5, 0)
+        end
+        if NoClip then
+        FakeCharacter.Humanoid:ChangeState(11)
+        end
+    end
+    )
+
+    PseudoAnchor = FakeCharacter.HumanoidRootPart
+    local function Invisible()
+    if IsInvisible == false then
+        local StoredCF = RealCharacter.HumanoidRootPart.CFrame
+        RealCharacter.HumanoidRootPart.CFrame = FakeCharacter.HumanoidRootPart.CFrame
+        FakeCharacter.HumanoidRootPart.CFrame = StoredCF
+        RealCharacter.Humanoid:UnequipTools()
+        Player.Character = FakeCharacter
+        workspace.CurrentCamera.CameraSubject = FakeCharacter.Humanoid
+        PseudoAnchor = RealCharacter.HumanoidRootPart
+        for i, v in pairs(FakeCharacter:GetChildren()) do
+            if v:IsA("LocalScript") then
+                v.Disabled = false
+            end
+        end
+
+        IsInvisible = true
+    else
+        local StoredCF = FakeCharacter.HumanoidRootPart.CFrame
+        FakeCharacter.HumanoidRootPart.CFrame = RealCharacter.HumanoidRootPart.CFrame
+        
+        RealCharacter.HumanoidRootPart.CFrame = StoredCF
+        
+        FakeCharacter.Humanoid:UnequipTools()
+        Player.Character = RealCharacter
+        workspace.CurrentCamera.CameraSubject = RealCharacter.Humanoid
+        PseudoAnchor = FakeCharacter.HumanoidRootPart
+        for i, v in pairs(FakeCharacter:GetChildren()) do
+            if v:IsA("LocalScript") then
+                v.Disabled = true
+            end
+        end
+        IsInvisible = false
+    end
+    end
+
+    game:GetService("UserInputService").InputBegan:Connect(
+    function(key, gamep)
+        if gamep then
+            return
+        end
+        if key.KeyCode.Name:lower() == Keybind:lower() and CanInvis and RealCharacter and FakeCharacter then
+            if RealCharacter:FindFirstChild("HumanoidRootPart") and FakeCharacter:FindFirstChild("HumanoidRootPart") then
+                Invisible()
+            end
+        end
+    end
+    )
+    local Sound = Instance.new("Sound",game:GetService("SoundService"))
+    Sound.SoundId = "rbxassetid://232127604"
+    Sound:Play()
+    game:GetService("StarterGui"):SetCore("SendNotification",{["Title"] = "reécris par $ z#2945.",["Text"] = "Appuie sur "..Keybind.." Pour devenir invisible.",["Duration"] = 20,["Button1"] = "oui oui tg salope"})
+    end)
+
+    Fun:NewButton("Fake AFK", "Fait en sorte que le jeu pense que tu es afk", function()
+    local args = {
+        [1] = true
+    }
+
+    game:GetService("ReplicatedStorage").IsAFK:FireServer(unpack(args))
+
+    end)
+
+
+    SectionPrincipal:NewButton("Lag server", "Fait en sorte que le jeu bug bcp", function()
+    
+
+while wait(0.6) do 
+    game:GetService("NetworkClient"):SetOutgoingKBPSLimit(math.huge)
+    local function getmaxvalue(val)
+    local mainvalueifonetable = 499999
+    if type(val) ~= "number" then
+    return nil
+    end
+    local calculateperfectval = (mainvalueifonetable/(val+2))
+    return calculateperfectval
+    end
+    local function bomb(tableincrease, tries)
+    local maintable = {}
+    local spammedtable = {}
+    table.insert(spammedtable, {})
+    z = spammedtable[1]
+    for i = 1, tableincrease do
+    local tableins = {}
+    table.insert(z, tableins)
+    z = tableins
+    end
+    local calculatemax = getmaxvalue(tableincrease)
+    local maximum
+    if calculatemax then
+    maximum = calculatemax
+    else
+    maximum = 999999
+    end
+    for i = 1, maximum do
+    table.insert(maintable, spammedtable)
+    end
+    for i = 1, tries do
+    game.RobloxReplicatedStorage.SetPlayerBlockList:FireServer(maintable)
+    end
+    end
+    bomb(250, 2) --// change values if client crashes
+    end
+
+    end)
+end
