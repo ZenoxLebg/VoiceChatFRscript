@@ -24,8 +24,11 @@ end)
 if game.PlaceId == 7959057987 then
     -- VOICECHAT FR
     -- Principal
-    local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/Jxereas/UI-Libraries/main/notification_gui_library.lua", true))()
 
+getgenv().AutoAFK = true
+
+
+    local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/Jxereas/UI-Libraries/main/notification_gui_library.lua", true))()
 
     local notif = Notification.new("success", "Success", "Success body message.")
     notif:changeHeading("New Heading") -- Args(<string> NewHeading)
@@ -35,57 +38,49 @@ if game.PlaceId == 7959057987 then
     
     for i,v in pairs(game.Players:GetPlayers()) do
         if string.match(v.UserId, "2209474319") then -- Just Edit It If You Wanna Add More!
-            Notification.new("warning", "Modérateur détecter", "SuzuyaJuzoXP à rejoint le jeu.") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
+            Notification.new("warning", "Modérateur detected", "SuzuyaJuzoXP est dans le jeu.") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
             end
             end
         for i,v in pairs(game.Players:GetPlayers()) do
             if string.match(v.UserId, "261772256") then -- Just Edit It If You Wanna Add More!
-                Notification.new("warning", "Modérateur détecter", "vPooHv à rejoint le jeu.") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
+                Notification.new("warning", "Modérateur detected", "vPooHv est dans le jeu.") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
             end
             end
             for i,v in pairs(game.Players:GetPlayers()) do
                 if string.match(v.UserId, "234442906") then -- Just Edit It If You Wanna Add More!
-                    Notification.new("warning", "Modérateur détecter", "Nhazul à rejoint le jeu.") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
+                    Notification.new("warning", "Modérateur detected", "Nhazul est dans le jeu") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
                 end
                 end
                 for i,v in pairs(game.Players:GetPlayers()) do
                     if string.match(v.UserId, "3946254") then -- Just Edit It If You Wanna Add More!
-                        Notification.new("warning", "Modérateur détecter", "SamGalren à rejoint le jeu.") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
+                        Notification.new("warning", "Modérateur detected", "SamGalren est dans le jeu") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
                     end
                     end
                     for i,v in pairs(game.Players:GetPlayers()) do
                         if string.match(v.UserId, "2943616866") then -- Just Edit It If You Wanna Add More!
-                            Notification.new("warning", "Modérateur détecter", "Lucas19997Ytb à rejoint le jeu.") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
+                            Notification.new("warning", "Modérateur detected", "Lucas19997Ytb est dans le jeu") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
                         end
                         end
                         for i,v in pairs(game.Players:GetPlayers()) do
                             if string.match(v.UserId, "505777934") then -- Just Edit It If You Wanna Add More!
-                                Notification.new("warning", "Modérateur détecter", "launchpad200 à rejoint le jeu.") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
+                                Notification.new("warning", "Modérateur detected", "launchpad200 est dans le jeu") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
                             end
                             end
                             for i,v in pairs(game.Players:GetPlayers()) do
                                 if string.match(v.UserId, "190207474") then -- Just Edit It If You Wanna Add More!
-                                    Notification.new("warning", "Modérateur détecter", "ibratv12 à rejoint le jeu.") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
+                                    Notification.new("warning", "Modérateur detected", "ibratv12 est dans le jeu") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
                                 end
                                 end
-                            end
-                        end
                         for i,v in pairs(game.Players:GetPlayers()) do
                             if string.match(v.UserId, "1598725000") then -- Just Edit It If You Wanna Add More!
-                                Notification.new("warning", "Modérateur détecter", "TongrandpereenY à rejoint le jeu.") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
+                                Notification.new("warning", "Modérateur detected", "TongrandpereenY est dans le jeu") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
                             end
                             end
                             for i,v in pairs(game.Players:GetPlayers()) do
                                 if string.match(v.UserId, "226382327") then -- Just Edit It If You Wanna Add More!
-                                    Notification.new("warning", "Modérateur détecter", "Cola4206 à rejoint le jeu.") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
+                                    Notification.new("warning", "Modérateur detected", "Cola4206 est dans le jeu") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
                                 end
                                 end
-                        
-
-
-
-
-
 
     local Main = Window:NewTab("Prinicpal")
     local SectionPrincipal = Main:NewSection("Voicechat FR")
@@ -107,7 +102,7 @@ if game.PlaceId == 7959057987 then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
     end)
 
-    SectionPrincipal:NewSlider("Walkspeed", "jsp wsh", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    SectionPrincipal:NewSlider("Walkspeed", "jsp wsh", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
     end)
 
@@ -659,13 +654,22 @@ if game.PlaceId == 7959057987 then
     game:GetService("StarterGui"):SetCore("SendNotification",{["Title"] = "reécris par $ z#2945.",["Text"] = "Appuie sur "..Keybind.." Pour devenir invisible.",["Duration"] = 20,["Button1"] = "oui oui tg salope"})
     end)
 
-    Fun:NewButton("Fake AFK", "Fait en sorte que le jeu pense que tu es afk", function()
-    local args = {
-        [1] = true
-    }
-
-    game:GetService("ReplicatedStorage").IsAFK:FireServer(unpack(args))
-
+    Fun:NewToggle("Fake AFK", "fake afk pour que les gens tcasse pas les couil", function(state)
+        if state then
+            getgenv().AutoAFK = true
+            while getgenv().AutoAFK == true do 
+                wait(0.1)
+                local args = {[1] = true }
+                game:GetService("ReplicatedStorage").IsAFK:FireServer(unpack(args))
+                print("Spam afk ON")
+            end
+        else
+            getgenv().AutoAFK = false
+            wait(1.5)
+                local args = {[1] = false}
+                game:GetService("ReplicatedStorage").IsAFK:FireServer(unpack(args))
+            
+        end
     end)
 
 
@@ -711,3 +715,4 @@ while wait(0.6) do
 
     end)
 end
+
