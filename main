@@ -24,6 +24,69 @@ end)
 if game.PlaceId == 7959057987 then
     -- VOICECHAT FR
     -- Principal
+    local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/Jxereas/UI-Libraries/main/notification_gui_library.lua", true))()
+
+
+    local notif = Notification.new("success", "Success", "Success body message.")
+    notif:changeHeading("New Heading") -- Args(<string> NewHeading)
+    notif:changeBody("New Body") -- Args(<string> NewBody)
+    notif:deleteTimeout(3) -- Args(<number> DeleteWaitTime)
+    notif:delete()
+    
+    for i,v in pairs(game.Players:GetPlayers()) do
+        if string.match(v.UserId, "2209474319") then -- Just Edit It If You Wanna Add More!
+            Notification.new("warning", "Modérateur détecter", "SuzuyaJuzoXP à rejoint le jeu.") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
+            end
+            end
+        for i,v in pairs(game.Players:GetPlayers()) do
+            if string.match(v.UserId, "261772256") then -- Just Edit It If You Wanna Add More!
+                Notification.new("warning", "Modérateur détecter", "vPooHv à rejoint le jeu.") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
+            end
+            end
+            for i,v in pairs(game.Players:GetPlayers()) do
+                if string.match(v.UserId, "234442906") then -- Just Edit It If You Wanna Add More!
+                    Notification.new("warning", "Modérateur détecter", "Nhazul à rejoint le jeu.") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
+                end
+                end
+                for i,v in pairs(game.Players:GetPlayers()) do
+                    if string.match(v.UserId, "3946254") then -- Just Edit It If You Wanna Add More!
+                        Notification.new("warning", "Modérateur détecter", "SamGalren à rejoint le jeu.") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
+                    end
+                    end
+                    for i,v in pairs(game.Players:GetPlayers()) do
+                        if string.match(v.UserId, "2943616866") then -- Just Edit It If You Wanna Add More!
+                            Notification.new("warning", "Modérateur détecter", "Lucas19997Ytb à rejoint le jeu.") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
+                        end
+                        end
+                        for i,v in pairs(game.Players:GetPlayers()) do
+                            if string.match(v.UserId, "505777934") then -- Just Edit It If You Wanna Add More!
+                                Notification.new("warning", "Modérateur détecter", "launchpad200 à rejoint le jeu.") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
+                            end
+                            end
+                            for i,v in pairs(game.Players:GetPlayers()) do
+                                if string.match(v.UserId, "190207474") then -- Just Edit It If You Wanna Add More!
+                                    Notification.new("warning", "Modérateur détecter", "ibratv12 à rejoint le jeu.") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
+                                end
+                                end
+                            end
+                        end
+                        for i,v in pairs(game.Players:GetPlayers()) do
+                            if string.match(v.UserId, "1598725000") then -- Just Edit It If You Wanna Add More!
+                                Notification.new("warning", "Modérateur détecter", "TongrandpereenY à rejoint le jeu.") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
+                            end
+                            end
+                            for i,v in pairs(game.Players:GetPlayers()) do
+                                if string.match(v.UserId, "226382327") then -- Just Edit It If You Wanna Add More!
+                                    Notification.new("warning", "Modérateur détecter", "Cola4206 à rejoint le jeu.") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
+                                end
+                                end
+                        
+
+
+
+
+
+
     local Main = Window:NewTab("Prinicpal")
     local SectionPrincipal = Main:NewSection("Voicechat FR")
 
